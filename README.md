@@ -5,29 +5,29 @@ return JSON.
 
 # GET /payment-amount
 Get the recurring payment amount of a mortgage
-Params:
+* Params:
 Asking Price
-Down Payment*
-Payment schedule***
-Amortization Period**
-Return:
+Down Payment
+Payment schedule
+Amortization Period
+* Return:
 Payment amount per scheduled payment
 
 # GET /mortgage-amount
 Get the maximum mortgage amount
-Params:
+* Params:
 payment amount
-Down Payment(optional)****
-Payment schedule***
-Amortization Period**
-Return:
+Down Payment(optional)
+Payment schedule
+Amortization Period
+* Return:
 Maximum Mortgage that can be taken out
 
 # PATCH /interest-rate
 Change the interest rate used by the application
-Params:
+* Params:
 Interest Rate
-Return:
+* Return:
 message indicating the old and new interest rate
 
 # Description
