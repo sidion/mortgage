@@ -59,7 +59,7 @@ def get_payment():
     Return:
     Payment amount per scheduled payment
     '''
-    json_str = request.args.get('json', default = '', type = str) #if ther is no key named json then return empty string
+    json_str = request.args.get('json', default = '', type = str) #if there is no key named json then return empty string
     
     if len(json_str) == 0:
         return jsonify({variable.var_result : variable.var_reponse_fail,
@@ -87,6 +87,7 @@ def get_payment():
                 return jsonify({variable.var_result : variable.var_reponse_fail,
                         variable.var_response_msg : variable.err_invalid_parameters}) 
 
+            # The payment schedule should one of following: weekly, biweekly, monthly
             if json_object[variable.var_payment_schdule] not in variable.dict_payment_schedule:
                 return jsonify({variable.var_result : variable.var_reponse_fail,
                         variable.var_response_msg : variable.err_invalid_payment_schedule}) 
