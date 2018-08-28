@@ -2,6 +2,8 @@
 
 Create a mortgage calculator API using any language/tech stack. The API should accept and
 return JSON.
+* Python 2.7 + Flask / Flask_httpauth
+* Tested in CentOS 7.5 x64 with Python 2.7.5 installed
 
 # GET /payment-amount
 Get the recurring payment amount of a mortgage
